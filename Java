@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+class IMC {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Digite seu peso em kg: ");
+        float peso = sc.nextFloat();
+        
+        System.out.println("Digite sua altura em metros: ");
+        float altura = sc.nextFloat();
+        
+        float imc = peso / (altura * altura);
+        System.out.println("Seu IMC é" + imc + "kg/m²");
+        
+    }
+}
